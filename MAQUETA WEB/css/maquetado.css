@@ -1,0 +1,99 @@
+@charset "utf-8";
+	/*Inicio Animacion del Header*/
+	@-webkit-keyframes animarFondo {
+		from {
+			border-radius:20px;	
+			background-color: #3B5A82;			
+		} to {
+			border-radius:20px;
+			text-shadow: #3B5A82 -1px 1px, #3B5A82 -2px 2px, #3B5A82 -3px 3px, #3B5A82 -4px 4px, #3B5A82 -5px 5px;	
+		}
+	}
+	.animFondo {
+		-webkit-animation-name: animarFondo;
+		-webkit-animation-duration: 4s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-direction: alternate;/*para que vuelva a su posicion inicial */		
+		color: #fff;
+		position: relative;
+		margin-top:2px;
+	}
+	/*Inicio para el maquetado web*/
+	body{
+		background-color:#CAEEFF;
+	}
+	header{
+		border:#000 solid 1px;
+		border-radius:10px 10px 0 0;
+		height:150px;
+		box-shadow:0 0 10px 3px #888888 inset;
+		background: #82D7FF;
+	}
+	header h1 {
+		color:#FFF;
+  		text-shadow: 0 1px 0 #ccc, 
+        	0 2px 0 #c9c9c9,
+            0 3px 0 #bbb,
+            0 4px 0 #b9b9b9,
+            0 5px 0 #aaa,
+            0 6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 1px 3px rgba(0,0,0,.3),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.25),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15);
+	}
+	nav{
+		height:50px;
+		margin-top:5px;
+		margin-bottom:5px;
+	}
+	.asRaiz{
+		width: 182px;
+		float:left;
+	}
+	#asLogin{
+		margin-bottom:10px;		
+	}
+	.asRaiz .asFondo{
+		width: 182px;
+		display:block;
+		position: relative;	
+		float:left;
+		background: #014464;
+		border: 1px solid #015b86;
+		border-top: 1px solid #029feb;
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0272a7), to(#013953));
+		border-radius: 10px;		
+	}
+	aside p{
+		margin:0px 10px 0px 0px;		
+		color: #EEEEEE;
+		text-shadow: 1px 1px 1px #000;
+		font-weight:bolder;
+		border-bottom:#FFF solid 1px;
+		padding:0px 5px 0px 5px;
+		box-shadow:0px 4px 10px #000;
+		background: -webkit-linear-gradient(top, rgb(45,56,58) 1%, rgb(21,30,33) 100%);			
+	}
+	article{
+		border:#0080C0 solid 1px;
+		height:400px;
+		margin-left:187px;
+		box-shadow:0 0 10px 1px #FFF inset;
+		border-radius:10px;
+		background: #FFF;		
+	}
+	footer{
+		clear:both;
+		margin-top:10px;
+		border:#333 solid 1px;
+		border-radius:10px;
+		margin-top:5px;
+		height:80px;
+		box-shadow:0 0 10px 1px  #333 inset;
+		background: -webkit-gradient(linear, 0% 40%, 0% 100%, from(#0080C0), to(#000));
+	}
+	/*Fin para el maquetado web*/	
+
