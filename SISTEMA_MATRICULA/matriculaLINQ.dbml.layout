@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 9" name="matriculaLINQ">
+  <DataContextMoniker Name="/matriculaLINQDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e5214583-8dc5-488c-8517-2b54d28a30b4" absoluteBounds="3.5, 7.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/matriculaLINQDataContext/usuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="69c499a9-2f4e-43cf-9534-a3e3376489c6" absoluteBounds="3.515, 7.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a7e9c15d-39e2-4d0b-bf3f-13e188380816" absoluteBounds="3.5, 3.625, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/matriculaLINQDataContext/alumno" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8fa9dfea-4976-4d61-8430-8f529c742678" absoluteBounds="3.515, 4.085, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f29bb9df-2b1c-4d61-bb53-1c27145bac1e" absoluteBounds="0.75, 3, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/matriculaLINQDataContext/carrera_profesional" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b8b938b0-a245-4d74-ae68-3ad038ded309" absoluteBounds="0.765, 3.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1bed5955-2bba-4b7d-80e2-52384e32cd5d" absoluteBounds="3.5, 1.125, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/matriculaLINQDataContext/cursos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7a6c5906-b4cb-4e71-baf4-5feb09f8d9fc" absoluteBounds="3.515, 1.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6d713764-4c6a-4945-a8fa-0a2711897004" absoluteBounds="9, 2.875, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/matriculaLINQDataContext/detalle_matricula" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1005d012-55c1-47a1-afd3-f928af91c715" absoluteBounds="9.015, 3.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f76f280b-1ac6-47fa-b34b-9839a66d84d6" absoluteBounds="6.25, 3.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/matriculaLINQDataContext/matricula" />
+      <nestedChildShapes>
+        <elementListCompartment Id="65442b32-077f-41f4-a661-595b83cab5f2" absoluteBounds="6.265, 4.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 4.00564697265625); (3.5 : 4.00564697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/matriculaLINQDataContext/carrera_profesional/carrera_profesional_alumno" />
+      <nodes>
+        <classShapeMoniker Id="f29bb9df-2b1c-4d61-bb53-1c27145bac1e" />
+        <classShapeMoniker Id="a7e9c15d-39e2-4d0b-bf3f-13e188380816" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 3); (1.75 : 2.01044840494792); (3.5 : 2.01044840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/matriculaLINQDataContext/carrera_profesional/carrera_profesional_cursos" />
+      <nodes>
+        <classShapeMoniker Id="f29bb9df-2b1c-4d61-bb53-1c27145bac1e" />
+        <classShapeMoniker Id="1bed5955-2bba-4b7d-80e2-52384e32cd5d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.9999995); (10 : 1.9999995); (10 : 2.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/matriculaLINQDataContext/cursos/cursos_detalle_matricula" />
+      <nodes>
+        <classShapeMoniker Id="1bed5955-2bba-4b7d-80e2-52384e32cd5d" />
+        <classShapeMoniker Id="6d713764-4c6a-4945-a8fa-0a2711897004" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 4.06814697265625); (9 : 4.06814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/matriculaLINQDataContext/matricula/matricula_detalle_matricula" />
+      <nodes>
+        <classShapeMoniker Id="f76f280b-1ac6-47fa-b34b-9839a66d84d6" />
+        <classShapeMoniker Id="6d713764-4c6a-4945-a8fa-0a2711897004" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.95274983723958); (6.25 : 4.95274983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/matriculaLINQDataContext/alumno/alumno_matricula" />
+      <nodes>
+        <classShapeMoniker Id="a7e9c15d-39e2-4d0b-bf3f-13e188380816" />
+        <classShapeMoniker Id="f76f280b-1ac6-47fa-b34b-9839a66d84d6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 7.91429768880208); (7.25 : 7.91429768880208); (7.25 : 6.03049967447917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/matriculaLINQDataContext/usuario/usuario_matricula" />
+      <nodes>
+        <classShapeMoniker Id="e5214583-8dc5-488c-8517-2b54d28a30b4" />
+        <classShapeMoniker Id="f76f280b-1ac6-47fa-b34b-9839a66d84d6" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="plantilla.master.cs" Inherits="SISTEMA_MATRICULA.plantilla" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Sistema Integrado de Matriculas [SIM]</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="width: 80%; margin:0 auto; border-radius:10px; border:solid 1px; padding:10px">
+        <div style="padding:10px; border:solid 1px; margin-bottom:5px;">
+        <h1 style="text-align:center">Sistema Integrado de Matriculas [SIM]</h1>
+           <div> Bienvenido al sistema: <strong><asp:Label ID="lblUsuario" runat="server" Text="Label"></asp:Label></strong></div>
+        <asp:Menu ID="mnuPrincipal" runat="server" BackColor="#B5C7DE" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="Medium" ForeColor="#284E98" Orientation="Horizontal" StaticSubMenuIndent="15px" OnMenuItemClick="mnuPrincipal_MenuItemClick">
+            <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <DynamicMenuStyle BackColor="#B5C7DE" />
+            <DynamicSelectedStyle BackColor="#507CD1" />
+            <Items>
+                <asp:MenuItem Text="Herramientas" Value="Herramientas">
+                    <asp:MenuItem Text="Mi Cuenta" Value="cuenta"></asp:MenuItem>
+                    <asp:MenuItem Text="Usuarios" Value="usuarios"></asp:MenuItem>
+                    <asp:MenuItem Text="Salir del Sistema" Value="salir"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Inicio" Value="inicio" NavigateUrl="~/default.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Matricula" Value="Matricula">
+                    <asp:MenuItem Text="Nueva Matricula" Value="nmatricula" NavigateUrl="~/nuevaMatricula.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Gestionar Matricula" Value="gmatricula" NavigateUrl="~/gestionarMatricula.aspx"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Cursos" Value="Cursos">
+                    <asp:MenuItem Text="Nuevo Curso" Value="ncurso" NavigateUrl="~/nuevoCurso.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Gestionar Curso" Value="gcurso" NavigateUrl="~/gestionarCurso.aspx"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Alumnos" Value="Alumnos">
+                    <asp:MenuItem Text="Nuevo Alumno" Value="nalumno" NavigateUrl="~/nuevoAlumno.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Gestionar Alumno" Value="galumno" NavigateUrl="~/gestionarAlumno.aspx"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Salir del Sistema" Value="salir"></asp:MenuItem>
+            </Items>
+            <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
+            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <StaticSelectedStyle BackColor="#507CD1" />
+        </asp:Menu>
+        </div>
+        <div style="padding:10px; border:solid 1px; margin-bottom:5px;">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+        <div style="padding:10px; border:solid 1px; margin-bottom:5px;">
+            <h3 style="text-align:center">©SiM v0.01Beta ][lCatacora Soft S.A.][<br />
+<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            </h3>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
